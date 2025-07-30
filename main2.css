@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+}
+
+/* Header and Navigation */
+header {
+  background: #004d66;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1.5em;
+}
+
+main section {
+  margin-bottom: 3em;
+}
+
+h2 {
+  color: #004d66;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1em;
+  border-radius: 8px;
+}
+
+/* List Styling */
+ul {
+  padding-left: 1.2em;
+}
+
+/* Footer */
+footer {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 0.9em;
+  margin-top: 3em;
+}
+.side-by-side {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.side-by-side .text {
+  flex: 1 1 50%;
+}
+
+.side-by-side .image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.side-by-side .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Add this to the end of main2.css */
+
+/* Flex header for logo + title */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004d66;
+  color: #fff;
+  padding: 1em 2em;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.logo-title img {
+  height: 60px;
+  width: auto;
+}

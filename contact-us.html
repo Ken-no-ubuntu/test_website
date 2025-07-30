@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | ORIECO Consulting</title>
+  <link rel="stylesheet" href="main2.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: auto;
+      padding: 2em;
+    }
+
+    form {
+      display: grid;
+      gap: 1.5em;
+      background: #f9f9f9;
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+
+    input[type="email"],
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 0.75em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .checkbox-label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox-label input {
+      margin-right: 0.5em;
+    }
+
+    button {
+      padding: 0.75em 1.5em;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ORIECO Consulting K.K.</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="attorney.html">About Us</a></li>
+        <li><a href="practice-area.html">Practice Area</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/xyzpjalj" method="POST">
+        <div>
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+        </div>
+
+        <div>
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <div class="checkbox-label">
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          <label for="subscribe">Check here to receive email updates</label>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; ORIECO Consulting K.K. All Rights Reserved</p>
+    <p>Tokyo, Japan</p>
+  </footer>
+</body>
+</html>
